@@ -19,7 +19,7 @@ const initialState = (state = {}, action) => {
  * More info: http://rackt.org/redux/docs/api/combineReducers.html
  */
 const rootReducer = combineReducers({
-  initialState, // you might be used to: counter: counter,
+  initialState // you might be used to: counter: counter,
 });
 
 export default rootReducer;
