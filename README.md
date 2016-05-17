@@ -1,0 +1,1 @@
+<a href="https://codeclimate.com/github/eddiewang/minimal-react-boiler"><img src="https://codeclimate.com/github/eddiewang/minimal-react-boiler/badges/gpa.svg" /></a>
