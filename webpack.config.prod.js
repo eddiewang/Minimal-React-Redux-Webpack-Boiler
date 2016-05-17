@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/assets'
   },
   plugins: [
     /**
@@ -49,7 +49,7 @@ module.exports = {
       {
         test: /\.(jpg|png)$/,
         loader: 'url?limit=25000',
-        include: path.join(__dirname, 'assets')
+        include: path.join(__dirname, 'client/static')
       }
     ]
   }

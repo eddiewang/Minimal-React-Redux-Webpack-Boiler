@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import testReducer from './testReducer';
 
 // empty reducer. COMMENT OUT WHEN YOU ADD YOUR OWN!
-const initialState = (state = {}, action) => {
+const initialState = (state = true, action) => {
   return state
 }
 
@@ -19,7 +20,8 @@ const initialState = (state = {}, action) => {
  * More info: http://rackt.org/redux/docs/api/combineReducers.html
  */
 const rootReducer = combineReducers({
-  initialState // you might be used to: counter: counter,
+  initialState,
+  testReducer // you might be used to: testReducer: testReducer,
 });
 
 export default rootReducer;

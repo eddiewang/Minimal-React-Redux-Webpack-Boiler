@@ -30,12 +30,13 @@ api(app);
 if(process.env.NODE_ENV === "production"){
   // Still need to change
   console.log('Serving production build');
-  app.use('/', express.static('../assets'));
+  // app.use('/', express.static('../assets'));
 } else {
   console.log('Starting Webpack Middleware Server');
   const devCompiler = webpack(webpackDevOptions);
   app.use(webpackDevMiddleware(devCompiler, {
-    noInfo: true
+    noInfo: true,
+    publicPath: webpackDevOptions.output.publicPath
   }));
   app.use(webpackHotMiddleware(devCompiler));
 }
