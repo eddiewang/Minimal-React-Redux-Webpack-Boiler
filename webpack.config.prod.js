@@ -49,7 +49,7 @@ module.exports = {
       {
         test: /\.(jpg|png)$/,
         loader: 'url?limit=25000',
-        include: path.join(__dirname, 'client/static')
+        include: path.join(__dirname, 'assets')
       }
     ]
   }
