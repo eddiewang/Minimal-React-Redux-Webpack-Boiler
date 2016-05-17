@@ -25,6 +25,11 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel'
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loader: 'url?limit=25000',
+        include: path.join(__dirname, 'assets/img')
       }
     ]
   },

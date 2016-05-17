@@ -45,6 +45,11 @@ module.exports = {
       {
         test: /\.scss$/,
         loader: 'style!css!sass'
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loader: 'url?limit=25000',
+        include: path.join(__dirname, 'client/static')
       }
     ]
   }
