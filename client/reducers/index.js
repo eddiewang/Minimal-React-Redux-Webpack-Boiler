@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 
+// empty reducer. COMMENT OUT WHEN YOU ADD YOUR OWN!
 const initialState = (state = {}, action) => {
   return state
 }
